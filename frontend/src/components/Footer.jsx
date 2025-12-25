@@ -34,8 +34,11 @@ export function Footer() {
                     <a href="#" className="hover:text-foreground">Twitter</a>
                     <a href="#" className="hover:text-foreground">LinkedIn</a>
                 </div>
-                <div className="text-sm text-muted">
-                    © 2024 SignalsHQ Inc.
+                <div className="text-sm text-muted flex flex-col items-end">
+                    <span>© 2024 SignalsHQ Inc.</span>
+                    <span className="text-[10px] text-gray-200 mt-1 hover:text-gray-300 transition-colors cursor-default">
+                        Made by your future intern
+                    </span>
                 </div>
             </div>
         </footer>

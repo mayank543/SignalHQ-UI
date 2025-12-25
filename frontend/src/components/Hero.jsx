@@ -10,6 +10,11 @@ export default function Hero() {
             <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gray-200/50 rounded-full blur-3xl" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gray-100/50 rounded-full blur-3xl" />
 
+            {/* Subtle Easter Egg */}
+            <div className="absolute top-20 right-10 text-[10px] text-gray-200/50 rotate-12 select-none pointer-events-none font-bold tracking-widest uppercase">
+                Give me an intern
+            </div>
+
             <div className="max-w-5xl mx-auto px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

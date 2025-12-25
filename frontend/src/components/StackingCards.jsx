@@ -29,10 +29,14 @@ const Card = ({ title, description, icon: Icon, color, i, progress, range, targe
                         <p className="text-muted text-lg leading-relaxed">{description}</p>
 
                         <ul className="mt-8 space-y-3">
-                            {[1, 2, 3].map((_, idx) => (
+                            {[
+                                "Eliminates manual data entry",
+                                "Reduces review time by 40%",
+                                "Works hard (like a good intern)"
+                            ].map((text, idx) => (
                                 <li key={idx} className="flex items-center gap-2 text-sm text-foreground font-medium">
                                     <CheckCircle2 size={16} className="text-accent" />
-                                    <span>Feature benefit point {idx + 1}</span>
+                                    <span>{text}</span>
                                 </li>
                             ))}
                         </ul>
